@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>magekyu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .outer {
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            /* top: 150px; */
+            /* left: 262px; */
+            left: 55px;
+            top: 65px;
+            animation: outer 2s linear 2s infinite;
+            box-shadow: 2px 3px 70px red;
+
+        }
+
+        .cir {
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: black;
+        }
+
+        .inner {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            background-color: red;
+            position: relative;
+            display: flex;
+            left: 45px;
+            justify-content: center;
+            align-items: center;
+            border: 3px dashed black;
+        }
+
+        .tamoee1 {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: black;
+            position: relative;
+            bottom: 30px;
+        }
+
+        .tamoee2 {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: black;
+            position: relative;
+            right: 60px;
+            top: 10px;
+            transform: rotate(-100deg);
+        }
+
+        .tamoee3 {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: black;
+            position: relative;
+            right: 30px;
+            top: 10px;
+            transform: rotate(150deg);
+        }
+
+        .tri {
+            height: 15px;
+            width: 15px;
+            background-color: black;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 12px;
+            transform: rotate(-170deg);
+            position: relative;
+            left: 3px;
+            bottom: 9px;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        @keyframes outer {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(360deg);
+            }
+
+            100% {
+                transform: rotate(-360deg);
+            }
+
+        }
+
+        .eye2 {
+            height: 270px;
+            width: 270px;
+            background-color: black;
+            position: absolute;
+            left: 200px;
+            top: 88px;
+            border-top-left-radius: 100%;
+            /* border-top-right-radius: 50%; */
+            border-bottom-right-radius: 100%;
+            transform: rotate(45deg);
+            border: 2px solid white;
+            box-shadow: 2px 2px 2px white;
+            display: flex;
+            /* justify-content: center; */
+            /* align-items: center; */
+            /* animation: open 2s linear 2s infinite  ; */
+            overflow: hidden;
+
+        }
+        @keyframes open {
+            0%{
+                height: 270px;
+            width: 270px;
+            }
+            50%{
+                height: 0px;
+                
+            }
+            
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <div class="eye2">
+
+        <div class="outer">
+            <div class="inner">
+                <div class="cir"></div>
+            </div>
+            <div class="tamoee1">
+                <div class="tri"></div>
+            </div>
+            <div class="tamoee2">
+                <div class="tri"></div>
+            </div>
+            <div class="tamoee3">
+                <div class="tri"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
